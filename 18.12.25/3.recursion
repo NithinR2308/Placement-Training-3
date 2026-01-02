@@ -1,0 +1,10 @@
+public class RecursionProgram {
+    public static void main(String[] args) {
+        System.out.println("Recursion: " + sumRecursively(3));
+    }
+
+    public static int sumRecursively(int n) {
+        if(n == 0) return 0;
+        return 2 + sumRecursively(n - 1); // 2+2+2 = 6
+    }
+}
